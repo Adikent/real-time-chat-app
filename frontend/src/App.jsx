@@ -73,7 +73,7 @@ function App() {
     fetch(`${SERVER_URL}/api/messages`)
       .then((response) => response.json())
       .then((data) => {
-        setMessages(data);
+        setMessages(Array.isArray(data) ? data : (data.messages || []));
       })
       .catch((error) => {
         console.error("Could not load messages:", error);
