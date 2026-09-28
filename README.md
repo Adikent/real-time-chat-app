@@ -1,22 +1,22 @@
 # Real-Time Chat Application
 
-A real-time chat application built using React, Node.js, Express, and Socket.io.
+A full-stack real-time chat application built with React, Node.js, Express, and Socket.IO.
 
-The application supports real-time messaging between connected users, persistent chat history, timestamps, username-based entry, and a typing indicator.
+The application enables users to exchange messages in real time with message persistence, timestamps, typing indicators, username-based entry, and connection status.
 
 ---
 
 ## Features
 
-- Real-time messaging using Socket.io
+- Real-time messaging using Socket.IO
 - Send and receive messages without refreshing the page
 - Persistent chat history using a local JSON file
 - Message timestamps
-- Username-based dummy login
+- Username-based entry
 - Typing indicator
 - Connection status indicator
 - REST APIs for sending and fetching messages
-- Graceful handling of API and socket errors
+- Socket and API error handling
 - Responsive chat interface
 
 ---
@@ -27,14 +27,14 @@ The application supports real-time messaging between connected users, persistent
 
 - React
 - Vite
-- Socket.io Client
+- Socket.IO Client
 - CSS
 
 ### Backend
 
 - Node.js
-- Express
-- Socket.io
+- Express.js
+- Socket.IO
 
 ### Storage
 
@@ -54,8 +54,6 @@ real-time-chat-app/
 │   ├── data/
 │   │   └── messages.json
 │   │
-│   ├── middleware/
-│   │
 │   ├── routes/
 │   │   └── messageRoutes.js
 │   │
@@ -64,8 +62,6 @@ real-time-chat-app/
 │   │
 │   ├── sockets/
 │   │   └── chatSocket.js
-│   │
-│   ├── utils/
 │   │
 │   ├── server.js
 │   └── package.json
