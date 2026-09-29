@@ -73,3 +73,19 @@ real-time-chat-app/
 │
 ├── README.md
 └── .gitignore
+
+## Setup Instructions
+
+### 1.Clone the Repository
+
+```bash
+git clone https://github.com/Adikent/real-time-chat-app.git
+cd real-time-chat-app
+
+```
+
+## Project Demo
+
+A screen recording demonstrating the main features of the Real-Time Chat Application:
+
+[Watch the Project Demo](https://drive.google.com/file/d/1uQdV1v_OJ0ogPVqxdO0l3f-v54kaHiAR/view?usp=drivesdk)
