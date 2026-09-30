@@ -83,6 +83,44 @@ git clone https://github.com/Adikent/real-time-chat-app.git
 cd real-time-chat-app
 
 ```
+## Real-Time Communication
+
+Socket.IO is used for real-time communication in the application.
+
+It is used for:
+- Delivering new messages to connected users in real time
+- Showing the typing indicator
+- Handling connection and disconnection events
+
+REST APIs are used for sending messages and fetching chat history.
+
+## Design Decisions
+
+- React was used for the frontend because the assignment allows React as an alternative to the preferred React Native implementation.
+- Socket.IO was used for mandatory real-time communication.
+- REST APIs are used for sending messages and fetching chat history.
+- Backend responsibilities are separated into routes, controllers, services, and socket handlers.
+- `messageService.js` handles message storage and retrieval logic.
+- Chat history is persisted in `messages.json` for the scope of this assignment.
+- The frontend API URL is configurable through an environment variable.
+
+## Assumptions
+
+- Username-based entry is used as dummy authentication.
+- Production-level authentication is outside the scope of this assignment.
+- Local JSON storage is sufficient for demonstrating persistent chat history for this assignment.
+
+## Error Handling
+
+API and Socket.IO errors are handled to prevent unexpected failures and maintain connection status.
+
+During debugging, browser Developer Tools can be used to inspect:
+- Console errors
+- Network requests
+- HTTP status codes
+- API request and response data
+
+Server-side errors can be checked in the backend terminal.
 
 ## Project Demo
 
